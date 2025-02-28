@@ -1,189 +1,189 @@
-document.addEventListener('DOMContentLoaded', function() {
+document。addEventListener('DOMContentLoaded'， function() {
     // Website data
     const websites = [
         // AI Search category
         {
-            name: "Google",
-            url: "https://www.google.com/",
-            icon: "fa-brands fa-google",
+            name: "Google"，
+            url: "https://www.google.com/"，
+            icon: "fa-brands fa-google"，
             category: "ai-search"
-        },
+        }，
         {
-            name: "Bing",
-            url: "https://www.bing.com/",
-            icon: "fa-brands fa-microsoft",
+            name: "Bing"，
+            url: "https://www.bing.com/"，
+            icon: "fa-brands fa-microsoft"，
             category: "ai-search"
-        },
+        }，
         {
-            name: "websim",
-            url: "https://websim.ai/",
-            icon: "fa-solid fa-magnifying-glass",
+            name: "websim"，
+            url: "https://websim.ai/"，
+            icon: "fa-solid fa-magnifying-glass"，
             category: "ai-search"
-        },
+        }，
         {
-            name: "chatgpt",
-            url: "https://chatgpt.com/",
-            icon: "fa-brands fa-google",
+            name: "chatgpt"，
+            url: "https://chatgpt.com/"，
+            icon: "fa-brands fa-google"，
             category: "ai-search"
-        },
+        }，
         {
-            name: "傻豆包",
-            url: "https://www.doubao.com/chat/",
-            icon: "fa-solid fa-paw",
+            name: "傻豆包"，
+            url: "https://www.doubao.com/chat/"，
+            icon: "fa-solid fa-paw"，
             category: "ai-search"
-        },
+        }，
         {
-            name: "通义千问",
-            url: "https://chat.qwenlm.ai/",
-            icon: "fa-brands fa-rocketchat",
+            name: "通义千问"，
+            url: "https://chat.qwenlm.ai/"，
+            icon: "fa-brands fa-rocketchat"，
             category: "ai-search"
-        },
+        }，
         {
-            name: "kimi",
-            url: "https://kimi.moonshot.cn/",
-            icon: "fa-regular fa-moon",
+            name: "kimi"，
+            url: "https://kimi.moonshot.cn/"，
+            icon: "fa-regular fa-moon"，
             category: "ai-search"
-        },
+        }，
         {
-            name: "傻元宝",
-            url: "https://yuanbao.tencent.com/",
-            icon: "fa-solid fa-robot",
+            name: "傻元宝"，
+            url: "https://yuanbao.tencent.com/"，
+            icon: "fa-solid fa-robot"，
             category: "ai-search"
-        },
+        }，
         {
-            name: "google AIstudio",
-            url: "https://aistudio.google.com/",
-            icon: "fa-solid fa-robot",
+            name: "google AIstudio"，
+            url: "https://aistudio.google.com/"，
+            icon: "fa-solid fa-robot"，
             category: "ai-search"
-        },
+        }，
         {
-            name: "claude",
-            url: "https://claude.ai/",
-            icon: "fa-solid fa-robot",
+            name: "claude"，
+            url: "https://claude.ai/"，
+            icon: "fa-solid fa-robot"，
             category: "ai-search"
-        },
+        }，
         {
-            name: "ChandlerAi",
-            url: "https://chandler.bet/",
-            icon: "fa-solid fa-robot",
+            name: "ChandlerAi"，
+            url: "https://chandler.bet/"，
+            icon: "fa-solid fa-robot"，
             category: "ai-search"
-        },
+        }，
         {
-            name: "mistral",
-            url: "https://mistral.ai/",
-            icon: "fa-solid fa-brain",
+            name: "mistral"，
+            url: "https://mistral.ai/"，
+            icon: "fa-solid fa-brain"，
             category: "ai-search"
-        },
+        }，
         {
-            name: "groq",
-            url: "https://groq.com/",
-            icon: "fa-solid fa-group-arrows-rotate",
+            name: "groq"，
+            url: "https://groq.com/"，
+            icon: "fa-solid fa-group-arrows-rotate"，
             category: "ai-search"
-        },
+        }，
         {
-            name: "medscape",
-            url: "https://www.medscape.com/",
-            icon: "fa-solid fa-stethoscope",
+            name: "medscape"，
+            url: "https://www.medscape.com/"，
+            icon: "fa-solid fa-stethoscope"，
             category: "ai-search"
-        },
+        }，
         {
-            name: "heck.ai",
-            url: "https://heck.ai/",
-            icon: "fa-brands fa-rocketchat",
+            name: "heck.ai"，
+            url: "https://heck.ai/"，
+            icon: "fa-brands fa-rocketchat"，
             category: "ai-search"
-        },
+        }，
         {
-            name: "问小白",
-            url: "https://www.wenxiaobai.com/",
-            icon: "fa-solid fa-mask",
+            name: "问小白"，
+            url: "https://www.wenxiaobai.com/"，
+            icon: "fa-solid fa-mask"，
             category: "ai-search"
-        },
+        }，
         {
-            name: "leonardo.ai绘图",
-            url: "https://app.leonardo.ai/",
-            icon: "fa-regular fa-images",
+            name: "leonardo.ai绘图"，
+            url: "https://app.leonardo.ai/"，
+            icon: "fa-regular fa-images"，
             category: "ai-search"
-        },
+        }，
         {
-            name: "huggingface",
-            url: "https://huggingface.co/",
-            icon: "fa-solid fa-face-rolling-eyes",
+            name: "huggingface"，
+            url: "https://huggingface.co/"，
+            icon: "fa-solid fa-face-rolling-eyes"，
             category: "ai-search"
-        },
+        }，
         {
-            name: "lmarena",
-            url: "https://lmarena.ai/",
-            icon: "fa-solid fa-robot",
+            name: "lmarena"，
+            url: "https://lmarena.ai/"，
+            icon: "fa-solid fa-robot"，
             category: "ai-search"
-        },
+        }，
         {
-            name: "kelaode",
-            url: "https://kelaode.ai/",
-            icon: "fa-solid fa-robot",
+            name: "kelaode"，
+            url: "https://kelaode.ai/"，
+            icon: "fa-solid fa-robot"，
             category: "ai-search"
-        },
+        }，
         {
-            name: "x.ai",
-            url: "https://x.ai/",
-            icon: "fa-brands fa-x-twitter",
+            name: "x.ai"，
+            url: "https://x.ai/"，
+            icon: "fa-brands fa-twitter"，
             category: "ai-search"
-        },
+        }，
         {
-            name: "pce计算",
-            url: "https://ascvdpce.186404.xyz/",
-            icon: "fa-solid fa-heart-pulse",
+            name: "pce计算"，
+            url: "https://ascvdpce.186404.xyz/"，
+            icon: "fa-solid fa-heart-pulse"，
             category: "ai-search"
-        },
+        }，
         {
-            name: "deepseek",
-            url: "https://www.deepseek.com/",
-            icon: "fa-brands fa-rocketchat",
+            name: "deepseek"，
+            url: "https://www.deepseek.com/"，
+            icon: "fa-brands fa-rocketchat"，
             category: "ai-search"
-        },
+        }，
         {
-            name: "当贝AI",
-            url: "https://ai.dangbei.com/",
-            icon: "fa-brands fa-rocketchat",
+            name: "当贝AI"，
+            url: "https://ai.dangbei.com/"，
+            icon: "fa-brands fa-rocketchat"，
             category: "ai-search"
-        },
+        }，
         {
-            name: "beago.ai",
-            url: "https://www.beago.ai/",
-            icon: "fa-brands fa-rocketchat",
+            name: "beago.ai"，
+            url: "https://www.beago.ai/"，
+            icon: "fa-brands fa-rocketchat"，
             category: "ai-search"
-        },
+        }，
         {
-            name: "sigmachat",
-            url: "https://sigmabrowser.com/chat",
-            icon: "fa-brands fa-rocketchat",
+            name: "sigmachat"，
+            url: "https://sigmabrowser.com/chat"，
+            icon: "fa-brands fa-rocketchat"，
             category: "ai-search"
-        },
+        }，
         {
-            name: "bolt.new",
-            url: "https://bolt.new/",
-            icon: "fa-solid fa-bolt",
+            name: "bolt.new"，
+            url: "https://bolt.new/"，
+            icon: "fa-solid fa-bolt"，
             category: "ai-search"
-        },
+        }，
         
         // Social Media category
         {
-            name: "Facebook",
-            url: "https://www.facebook.com/",
-            icon: "fa-brands fa-facebook",
+            name: "Facebook"，
+            url: "https://www.facebook.com/"，
+            icon: "fa-brands fa-facebook"，
             category: "social"
-        },
+        }，
         {
-            name: "Twitter",
-            url: "https://twitter.com/",
-            icon: "fa-brands fa-twitter",
+            name: "Twitter"，
+            url: "https://twitter.com/"，
+            icon: "fa-brands fa-twitter"，
             category: "social"
-        },
+        }，
         {
-            name: "推特视频下载",
-            url: "https://twitterxz.com/",
-            icon: "fa-brands fa-x-twitter",
+            name: "推特视频下载"，
+            url: "https://twitterxz.com/"，
+            icon: "fa-brands fa-x-twitter"，
             category: "social"
-        },
+        }，
         {
             name: "Instagram",
             url: "https://www.instagram.com/",
