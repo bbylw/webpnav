@@ -125,7 +125,7 @@ document。addEventListener('DOMContentLoaded'， function() {
         {
             name: "x.ai"，
             url: "https://x.ai/"，
-            icon: "fa-brands fa-twitter"，
+            icon: "fa-brands fa-square-x-twitter"，
             category: "ai-search"
         }，
         {
